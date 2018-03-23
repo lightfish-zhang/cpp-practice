@@ -9,7 +9,7 @@
 #include <thread>   // std::this_thread::sleep_for
 #include <chrono>   // std::chrono::seconds
 
-#include "../src/ThreadPool.cpp"
+#include "../src/ThreadPool.hpp"
 
 using Practice::ThreadPool;
 
