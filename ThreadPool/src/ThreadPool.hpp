@@ -118,7 +118,7 @@ inline ThreadPool::~ThreadPool()
     // notify all thread that run `condition.wait()`
     condition.notify_all();
 
-    // collect worker threads one by one
+    // block thread , collect worker threads one by one
     for(std::thread &worker: workers)
         worker.join();
 }
