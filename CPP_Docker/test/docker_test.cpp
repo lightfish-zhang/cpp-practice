@@ -6,7 +6,7 @@ int main(int argc, char** argv) {
     docker::container_config config;
 
     // 配置容器
-    config.root_dir = "/home/lightfish/tmp/docker-image";
+    config.root_dir = "~/tmp/docker-image";
     config.host_name = "test-image";
 
     docker::container container(config);// 根据 config 构造容器
